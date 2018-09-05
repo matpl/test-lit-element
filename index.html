@@ -1,0 +1,24 @@
+<html>
+    <head>
+            <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+            <script type="module" src="MyElement.js"></script>
+            <script type="module" src="MyOtherElement.js"></script>
+            <script type="module" src="MyOtherElement2.js"></script>
+            <script type="module">
+            import '@polymer/paper-button/paper-button'
+            </script>
+    </head>
+<body>
+
+        <my-element id='asd' mood="happy">
+            <my-other-element mood="ASas" />
+        </my-element>
+
+ <script>
+    let bbb = document.getElementById('asd');
+    bbb.mood = 'SUP';
+    bbb.mood2 = 'kewl';
+    console.log(bbb);
+ </script>
+</body>
+</html> 
